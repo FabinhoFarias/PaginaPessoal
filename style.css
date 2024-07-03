@@ -5,6 +5,43 @@
     box-sizing: border-box;
 }
 
+header {
+    width: 100vw;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    padding: 0; 
+}
+
+#Logo {
+    height: 100px;
+}
+
+.menu {
+    margin-left: auto; /* Empurra o menu para a direita */
+    display: flex;
+    object-fit: contain;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+ul li {
+    margin-left: 10px; /* Espaçamento entre os itens do menu */
+}
+
+#Logo_Instagram {
+    margin-top: 3px;
+    height: 70px;
+    margin-right: 15px;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -23,6 +60,36 @@ body {
     background-color: rgba(0, 0, 0, 0.144);
 }
 
+.foto_de_fundo {
+    background-image: url(img/foto_de_fundo.jpg);
+    width: 100vw;
+    height: 1500px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+#OlaMundo {
+    margin-left: auto;
+    position: absolute;
+    top: 50vh;
+    left: 5vh;
+    font-size: 120px;
+    overflow: hidden;
+    animation: typing 3s steps(12), blinking 0.1s infinite step-end alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 13ch; }
+}
+
+@keyframes blinking {
+    from { border-color: transparent; }
+    to { border-color: white; }
+}
+
 .escurecer {
     width: 100vw;
     height: auto;
@@ -35,7 +102,7 @@ body {
 
 .container {
     top: 10vw;
-    display: flex;
+    display: flex; /* Colocar flex depois*/
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -59,10 +126,31 @@ body {
 }
 
 .nome {
-    font-family: 'Garamond', serif;
-    font-size: 80px;
-    color: rgba(255, 255, 255, 0.866);
-    margin-bottom: 5px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 11ch;
+    border-right: 4px solid;
+    font-size: 65px; 
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 5s steps(12), blinking 1s infinite step-end alternate;
+    animation-iteration-count: infinite; 
+}
+
+.space-mono-regular {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 12ch; }
+}
+
+@keyframes blinking {
+    from { border-color: transparent; }
+    to { border-color: white; }
 }
 
 .descricao {
@@ -91,7 +179,7 @@ body {
     height: 10vh;
     background-color: rgba(0, 0, 0, 0.47);
     border-radius: 40px;
-    transition: all .3s ease-in;
+    transition: all .1s ease-in;
 }
 
 .botao_redirecionador:hover {
@@ -112,6 +200,10 @@ body {
     }
     .nome {
         font-size: 60px;
+    }
+
+    .foto_de_fundo {
+        height: 100vh;
     }
     
     .descricao {
