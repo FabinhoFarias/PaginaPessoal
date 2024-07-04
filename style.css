@@ -4,14 +4,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* Colocar Os botões sendo uma imagem da página que ela vai ser redirecionada, ao estilo https://www.andrelrcavalcante.com/ */
+
+/* Lembrar de deixar os cards semelhantes aos do https://www.andrelrcavalcante.com/ */
+/* Estilos para o header */
 header {
     width: 100vw;
     height: 100px;
     background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
-    padding: 0; 
+    padding: 0;
 }
 
 #Logo {
@@ -43,6 +45,7 @@ ul li {
 }
 
 body {
+    overflow-x: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,13 +73,14 @@ body {
 }
 
 #OlaMundo {
-    margin-left: auto;
     position: absolute;
     top: 50vh;
     left: 5vh;
     font-size: 120px;
+    width: 13ch;
     overflow: hidden;
-    animation: typing 3s steps(12), blinking 0.1s infinite step-end alternate;
+    white-space: nowrap; /* Garante que o texto não quebra */
+    animation: typing 3s steps(13), blinking 0.1s infinite step-end alternate;
     animation-iteration-count: infinite;
 }
 
@@ -102,7 +106,7 @@ body {
 
 .container {
     top: 10vw;
-    display: flex; /* Colocar flex depois*/
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -133,7 +137,7 @@ body {
     font-size: 65px; 
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 5s steps(12), blinking 1s infinite step-end alternate;
+    animation: typing-name 5s steps(12), blinking 1s infinite step-end alternate;
     animation-iteration-count: infinite; 
 }
 
@@ -143,14 +147,9 @@ body {
     font-style: normal;
 }
 
-@keyframes typing {
+@keyframes typing-name {
     from { width: 0; }
     to { width: 12ch; }
-}
-
-@keyframes blinking {
-    from { border-color: transparent; }
-    to { border-color: white; }
 }
 
 .descricao {
@@ -195,13 +194,15 @@ body {
         height: 20vh;
         margin-bottom: 20px;
     }
-    .container{
+    .container {
         scale: 0.85;
     }
     .nome {
         font-size: 60px;
     }
-
+    #OlaMundo {
+        font-size: 40px;
+    }
     .foto_de_fundo {
         height: 100vh;
     }
@@ -212,5 +213,16 @@ body {
 
     .botao_redirecionador {
         font-size: 35px;
+    }
+}
+
+@media screen and (max-height: 1200px) {
+    .foto_de_fundo {
+        width: 100vw;
+        height: 130vh;
+    }
+    #OlaMundo {
+        margin: auto;
+        top: 70vh;
     }
 }
