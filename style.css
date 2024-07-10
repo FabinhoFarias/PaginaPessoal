@@ -187,6 +187,50 @@ body {
     background-color: rgba(255, 255, 255, 0.719);
 }
 
+/* Estilos para o container de fotos */
+.containerFotos {
+    display: flex; /* Utiliza o modelo de layout flexbox para organizar os elementos */
+    margin: auto; /* Centraliza o container horizontalmente */
+}
+
+/* Estilos para o container de rolagem horizontal */
+.scroll-container {
+    width: 700px; /* Largura fixa do container de rolagem */
+}
+
+/* Estilos para o conteúdo de rolagem horizontal */
+.scroll-content {
+    display: inline-block; /* Exibe o conteúdo como bloco em linha */
+    white-space: nowrap; /* Evita que o conteúdo quebre para a próxima linha */
+    transition: transform 0.5s ease; /* Transição suave para a propriedade transform */
+}
+
+/* Estilos para as imagens dentro do conteúdo de rolagem */
+.scroll-content img {
+    width: 700px; /* Largura das imagens dentro do conteúdo de rolagem */
+    /* Ajuste o tamanho das imagens conforme necessário */
+}
+
+/* Estilos para os botões */
+button {
+    all: unset; /* Remove todos os estilos padrão */
+    cursor: pointer; /* Define o cursor como apontador */
+}
+
+/* Estilos para os botões específicos */
+.botao {
+    margin: 10px; /* Espaçamento ao redor dos botões */
+    width: 100px; /* Largura dos botões */
+    height: 100px; /* Altura dos botões */
+    border: none; /* Remove a borda dos botões */
+}
+
+/* Estilos de hover para os botões */
+.botao:hover {
+    transform: scale(1.05);
+}
+
+
 /* Media Screen para telas menores */
 @media screen and (max-width: 448px) {
     .foto_de_perfil {
@@ -213,6 +257,18 @@ body {
 
     .botao_redirecionador {
         font-size: 35px;
+    }
+    .scroll-container {
+        width: 100vw; /* Largura fixa do container de rolagem */
+    }
+
+    /* Estilos para as imagens dentro do conteúdo de rolagem */
+    .scroll-content img {
+        width: 100vw; /* Largura das imagens dentro do conteúdo de rolagem */
+    }
+
+    .botao{
+        display: none;
     }
 }
 
