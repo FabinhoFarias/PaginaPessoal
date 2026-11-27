@@ -1,0 +1,122 @@
+{
+  "projects": [
+    {
+      "id": "matematica",
+      "name": "Trilha de Matemática Básica",
+      "description": "Uma sequência de conteúdos para estudar matemática desde os fundamentos, com tópicos e materiais organizados para acompanhar seu aprendizado.",
+      "category": "ensino",
+      "icon": "π",
+      "displayOrder": 1,
+      "showInHighlights": true,
+      "isApplication": false,
+      "hasLink": true,
+      "linkUrl": "https://fabinhofarias.github.io/Aulas/",
+      "linkLabel": "Visitar aulas",
+      "gallery": {
+        "folder": null,
+        "photos": []
+      }
+    },
+    {
+      "id": "github",
+      "name": "Projetos e estudos",
+      "description": "Um espaço para conhecer meus projetos, estudos e experimentos com tecnologia e desenvolvimento de software.",
+      "category": "perfil",
+      "icon": "</>",
+      "displayOrder": 2,
+      "showInHighlights": true,
+      "isApplication": false,
+      "hasLink": true,
+      "linkUrl": "https://github.com/FabinhoFarias",
+      "linkLabel": "Ver repositórios",
+      "gallery": {
+        "folder": null,
+        "photos": []
+      }
+    },
+    {
+      "id": "donruan",
+      "name": "Experiências no Don Ruan",
+      "description": "Registros de atividades, encontros e experiências de aprendizagem vividas no Don Ruan, incluindo o Open Day.",
+      "category": "experiência",
+      "icon": "✳",
+      "displayOrder": 3,
+      "showInHighlights": true,
+      "isApplication": false,
+      "hasLink": true,
+      "linkUrl": "https://www.instagram.com/donruancursos/",
+      "linkLabel": "Conhecer iniciativa",
+      "gallery": {
+        "folder": "DonRuan",
+        "sectionLabel": "Experiências",
+        "photos": [
+          {
+            "file": "OpenDay1.jpg",
+            "order": 1,
+            "alt": "Participantes do Open Day levantam os celulares durante uma atividade coletiva."
+          },
+          {
+            "file": "OpenDay2.jpg",
+            "order": 2,
+            "alt": "Participantes comemoram juntos durante o Open Day, com os celulares iluminados."
+          },
+          {
+            "file": "OpenDay3.jpg",
+            "order": 3,
+            "alt": "Vista ampla do público participando de uma atividade do Open Day."
+          },
+          {
+            "file": "DonRuanNoCIn.jpg",
+            "order": 4,
+            "alt": "Grupo do Don Ruan reunido no CIn ao entardecer."
+          },
+          {
+            "file": "Marco0.jpg",
+            "order": 5,
+            "alt": "Três integrantes do Don Ruan seguram a bandeira da iniciativa no Marco Zero, em Recife."
+          },
+          {
+            "file": "openDaydiretoria.jpg",
+            "order": 6,
+            "alt": "Equipe e participantes do Open Day reunidos para uma foto em grupo."
+          },
+          {
+            "file": "professoresDonRuan.jpg",
+            "order": 7,
+            "alt": "Professores do Don Ruan reunidos para uma foto ao ar livre."
+          }
+        ]
+      }
+    },
+    {
+      "id": "graduacao",
+      "name": "Minha graduação",
+      "description": "Registros da minha trajetória acadêmica, com destaque para projetos de pesquisa e participações em eventos universitários.",
+      "category": "formação",
+      "icon": "✧",
+      "displayOrder": 4,
+      "showInHighlights": false,
+      "isApplication": false,
+      "hasLink": false,
+      "linkUrl": null,
+      "linkLabel": null,
+      "gallery": {
+        "folder": "Graduacao",
+        "sectionLabel": "Minha trajetória",
+        "showWhenEmpty": true,
+        "photos": [
+          {
+            "file": "FotoComPoster.jpg",
+            "order": 1,
+            "alt": "Fábio apresenta o pôster do projeto BioTaxons e demonstra a aplicação em seu notebook durante o congresso."
+          },
+          {
+            "file": "FabinhoJam.jpg",
+            "order": 2,
+            "alt": "Fábio e uma colega apresentam seus pôsteres no 34º Congresso Unificado de Iniciação Científica da UFPE."
+          }
+        ]
+      }
+    }
+  ]
+}

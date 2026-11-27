@@ -1,55 +1,88 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fábio Filho</title>
+    <meta name="theme-color" content="#f5f2eb">
+    <meta name="description" content="Conheça o trabalho de Fábio Filho: educação, tecnologia e projetos.">
+    <title>Fábio Filho — Professor e Desenvolvedor</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Garamond&display=swap">
     <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
-
+    <script src="js/portfolio.js" defer></script>
 </head>
 
-<body class="fundo">
-    <header>
-        <img src="img/logo.png" id="Logo">
-        <nav class="menu">
-            <ul>
-                <li><a href="https://www.instagram.com/fabinhofariass/" target="_blank"><img src="img/Logo_Instagram.png" id="Logo_Instagram"></a></li>
-            </ul>
+<body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header">
+        <a class="brand" href="#inicio" aria-label="Fábio Filho — início">
+            <img src="img/logo.png" alt="" width="42" height="42">
+            <span>Fábio Filho</span>
+        </a>
+        <nav class="site-nav" aria-label="Navegação principal">
+            <a href="#projetos">Projetos</a>
+            <a href="#galeria">Galeria</a>
+            <a href="https://www.instagram.com/fabinhofariass/" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a>
         </nav>
     </header>
-    
 
-    <div class="escurecer">
-        
-        <div class="foto_de_fundo">
-            <p id="OlaMundo" class="space-mono-regular">Olá, Mundo!!</p>
-        </div>
-
-        <div class="container">
-            <img class="foto_de_perfil" src="img/foto.jpg">
-                <p class="nome space-mono-regular">Fábio Filho </p>
-                <p class="descricao">Professor - Dev</p>
-        </div>
-    
-        <div class="conjunto_botoes">
-            <a class="botao_redirecionador space-mono-regular" href="https://fabinhofarias.github.io/Aulas/" target="_blank">Matemática</a>
-            <a class="botao_redirecionador space-mono-regular" href="https://github.com/FabinhoFarias" target="_blank">Git Hub</a>
-            <a class="botao_redirecionador space-mono-regular" href="https://www.instagram.com/donruancursos/" target="_blank">Don Ruan</a>
-        </div>
-    </div>
-
-    <div class="containerFotos">
-        <button id="botaoEsquerda"><img src="img/SetaEsquerda.png" class="botao"></button>
-        <div class="scroll-container">
-            <div class="scroll-content" id="scrollContent">
-                <!-- As imagens serão inseridas aqui pelo JavaScript -->
+    <main id="conteudo">
+        <section class="hero page-width" id="inicio" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Professor <span aria-hidden="true">·</span> Desenvolvedor</p>
+                <h1 id="hero-title">Educação e tecnologia para <em>tirar ideias do papel.</em></h1>
+                <p class="hero-intro">Sou Fábio Filho. Crio experiências de aprendizagem e projetos digitais que aproximam pessoas do conhecimento.</p>
+                <a class="text-link" href="#galeria">Conheça meu trabalho <span aria-hidden="true">↓</span></a>
             </div>
-        </div>
-        <button id="botaoDireita"><img src="img/SetaDireita.png" class="botao"></button>
-    </div>
-    <script src="script.js"></script>
-</body>
+            <div class="portrait-wrap">
+                <div class="portrait-accent" aria-hidden="true"></div>
+                <img class="portrait" src="img/FotoEntradaCIn.jpg" alt="Retrato de Fábio Filho na entrada do CIn" width="1500" height="1000">
+                <p class="portrait-note">Aprender, criar<br>e compartilhar.</p>
+            </div>
+            <p class="hero-index" aria-hidden="true">PORTFÓLIO <span>·</span> 2026</p>
+        </section>
 
+        <section class="projects-section" id="projetos" aria-labelledby="projects-title">
+            <div class="page-width">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">Um pouco do que faço</p>
+                        <h2 id="projects-title">Projetos em destaque</h2>
+                    </div>
+                    <p class="section-intro">Ensino, desenvolvimento e iniciativas que conectam gente e ideias.</p>
+                </div>
+
+                <div class="project-grid" id="project-grid" aria-busy="true">
+                </div>
+                <noscript><p class="data-message">Ative o JavaScript para carregar os projetos do catálogo.</p></noscript>
+            </div>
+        </section>
+
+        <section class="portfolio-section" id="galeria" aria-labelledby="gallery-title">
+            <div class="page-width">
+                <header class="portfolio-intro">
+                    <p class="eyebrow">Projetos, experiências e formação</p>
+                    <h2 id="gallery-title">Cada projeto tem <em>uma história.</em></h2>
+                    <p>Aplicativos, experiências e momentos importantes da minha trajetória.</p>
+                </header>
+
+                <div class="album-list" id="album-list" aria-busy="true">
+                </div>
+                <noscript><p class="data-message">Ative o JavaScript para carregar as galerias do catálogo.</p></noscript>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="page-width footer-content">
+            <a class="brand footer-brand" href="#inicio">
+                <img src="img/logo.png" alt="" width="34" height="34">
+                <span>Fábio Filho</span>
+            </a>
+            <p>Feito com curiosidade e vontade de aprender.</p>
+            <a class="footer-link" href="https://www.instagram.com/fabinhofariass/" target="_blank" rel="noopener noreferrer">Vamos conversar <span aria-hidden="true">↗</span></a>
+        </div>
+    </footer>
+
+</body>
 </html>
